@@ -9,7 +9,7 @@ public class Chess {
 	protected Board board;
 
 	public Chess() {
-
+		//ok
 		board = new Board();
 		board.setupChessBoard();
 
