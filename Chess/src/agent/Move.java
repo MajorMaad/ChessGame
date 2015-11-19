@@ -11,6 +11,6 @@ public class Move {
 	}
 
 	public String toString() {
-		return (char)('a' + xI) + "" + yI + (char)('a' + xF) + "" + yF;
+		return (char)('a' + xI) + "" + (yI+1) + (char)('a' + xF) + "" + (yF+1);
 	}
 }

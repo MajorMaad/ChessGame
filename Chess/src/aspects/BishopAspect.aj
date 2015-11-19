@@ -13,7 +13,7 @@ public aspect BishopAspect {
     boolean around(Move mv): execution(boolean piece.Bishop.isMoveLegal(Move)) && args(mv) {
     	return checkBishopMove(mv);
     }
-	
+    
     /**
      * Check if the bishop move is legal
      * @param mv
@@ -28,13 +28,14 @@ public aspect BishopAspect {
 			return false;
 		}
 		
-		int checkIterations = Math.abs(mv.xF - mv.yI);
+		int checkIterations = Math.abs(mv.xF - mv.xI);
 		
-		for (int i=1; i<checkIterations; i++) {
-			Spot spot = new Spot(mv.xI+i, mv.yF+i);
-			if (spot.isOccupied())
-				return false;
-		}
+//		for (int i=1; i<checkIterations; i++) {
+//			System.out.println(spot.toString());
+//			if (spot.isOccupied()) {
+//				return false;
+//			}
+//		}
 		
 		return true;
 	}
