@@ -1,7 +1,6 @@
 package aspects;
 
 import agent.Move;
-import main.Spot;
 
 public aspect BishopAspect {
     
@@ -27,15 +26,6 @@ public aspect BishopAspect {
 		if (Math.abs(mv.xF - mv.xI) != Math.abs(mv.yF - mv.yI)) {
 			return false;
 		}
-		
-		int checkIterations = Math.abs(mv.xF - mv.xI);
-		
-//		for (int i=1; i<checkIterations; i++) {
-//			System.out.println(spot.toString());
-//			if (spot.isOccupied()) {
-//				return false;
-//			}
-//		}
 		
 		return true;
 	}
