@@ -1,0 +1,14 @@
+----- Moves of the game -----
+
+Human's move : a1a5
+
+
+AI's move : g8f6
+
+
+Human's move : a5a7
+
+
+AI's move : f6e4
+
+
