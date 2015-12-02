@@ -1,5 +1,9 @@
 # ChessGame
 
+## Auteurs
+
+* Marie Darrigol
+* Quentin Audinot
 
 ## Journalisation
 
